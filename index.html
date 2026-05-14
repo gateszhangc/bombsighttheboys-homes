@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bombsight | The Boys Universe - Vought Rising Character Profile</title>
+  <meta name="description" content="Learn about Bombsight (Robbie), the WW2 combat pilot turned Supe from The Boys universe. Discover his powers, background, personality, and role in Vought Rising." />
+  <meta name="keywords" content="Bombsight, The Boys, Vought Rising, Robbie, Soldier Boy, V-One, Supe, Vought, Stormfront, Golden Geisha, Superhero, Amazon Prime, Character Profile" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="Bombsight | The Boys Universe - Vought Rising Character Profile" />
+  <meta property="og:description" content="Learn about Bombsight (Robbie), the WW2 combat pilot turned Supe from The Boys universe. Discover his powers, background, personality, and role in Vought Rising." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://bombsighttheboys.com" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Bombsight | The Boys Universe" />
+  <meta name="twitter:description" content="Learn about Bombsight (Robbie), the WW2 combat pilot turned Supe from The Boys universe." />
+  <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAC0lEQVQI12NgAAIABQABNjN9GQAAAAlwSFlzAAAWJQAAFiUBSVIk8AAAAA0lEQVQI12Ng+M8AAAIBAQDyAPvtAAAAAElFTkSuQmCC" />
+  <style>
+    /* ===== Reset & Base ===== */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: #0a0a0a;
+      color: #f5f5f5;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; display: block; }
+
+    /* ===== Typography ===== */
+    h1, h2, h3 { font-weight: 700; line-height: 1.2; }
+    h1 { font-size: clamp(2rem, 5vw, 3.5rem); }
+    h2 { font-size: clamp(1.5rem, 3.5vw, 2.25rem); margin-bottom: 1rem; }
+    h3 { font-size: clamp(1.125rem, 2.5vw, 1.5rem); margin-bottom: 0.75rem; }
+    p { margin-bottom: 1rem; color: #a0a0a0; }
+    .text-accent { color: #f97316; }
+    .text-muted { color: #6b7280; }
+
+    /* ===== Layout ===== */
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+    section { padding: 4rem 0; }
+
+    /* ===== Navigation ===== */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      background: rgba(10, 10, 10, 0.85);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    }
+    nav .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 56px;
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+    .nav-brand {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-weight: 600;
+      font-size: 1.1rem;
+    }
+    .nav-brand canvas { display: block; border-radius: 4px; }
+    .nav-links { display: flex; gap: 1.5rem; font-size: 0.875rem; }
+    .nav-links a { color: #a0a0a0; transition: color 0.2s; }
+    .nav-links a:hover { color: #f5f5f5; }
+
+    /* ===== Hero ===== */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding-top: 56px;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(ellipse at 30% 40%, rgba(249, 115, 22, 0.08) 0%, transparent 50%),
+                  radial-gradient(ellipse at 70% 60%, rgba(220, 38, 38, 0.05) 0%, transparent 50%);
+      pointer-events: none;
+    }
+    .hero canvas { margin-bottom: 1.5rem; }
+    .hero h1 { margin-bottom: 0.5rem; }
+    .hero .subtitle {
+      font-size: 1.125rem;
+      color: #a0a0a0;
+      max-width: 480px;
+      margin: 0 auto 2rem;
+    }
+    .hero .btn {
+      display: inline-block;
+      padding: 0.875rem 2.5rem;
+      background: linear-gradient(135deg, #f97316, #dc2626);
+      color: #fff;
+      font-weight: 600;
+      font-size: 1rem;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .hero .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(249, 115, 22, 0.35);
+    }
+
+    /* ===== Section Divider ===== */
+    .divider {
+      width: 100%;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(249, 115, 22, 0.3), transparent);
+      margin: 0;
+    }
+
+    /* ===== Content Sections ===== */
+    .section-label {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: #f97316;
+      margin-bottom: 0.75rem;
+    }
+    .card {
+      background: #111111;
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .card p:last-child { margin-bottom: 0; }
+
+    /* Stats grid */
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+    .stat {
+      background: #111111;
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 12px;
+      padding: 1.25rem;
+      text-align: center;
+    }
+    .stat-value { font-size: 1.5rem; font-weight: 700; color: #f97316; }
+    .stat-label { font-size: 0.8rem; color: #6b7280; margin-top: 0.25rem; }
+
+    /* Powers list */
+    .powers-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+    .power-item {
+      background: #111111;
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 12px;
+      padding: 1.25rem;
+    }
+    .power-item .emoji { font-size: 1.5rem; margin-bottom: 0.5rem; }
+    .power-item h4 { font-size: 0.95rem; margin-bottom: 0.35rem; }
+    .power-item p { font-size: 0.85rem; color: #6b7280; margin-bottom: 0; }
+
+    /* Quote block */
+    .quote {
+      border-left: 3px solid #f97316;
+      padding: 1rem 1.5rem;
+      background: rgba(249, 115, 22, 0.05);
+      border-radius: 0 12px 12px 0;
+      margin-bottom: 1.5rem;
+    }
+    .quote p { font-style: italic; color: #d1d1d1; margin-bottom: 0.25rem; }
+    .quote cite { font-size: 0.875rem; color: #6b7280; font-style: normal; }
+
+    /* Episode list */
+    .episode-list { list-style: none; }
+    .episode-list li {
+      padding: 0.75rem 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+      display: flex;
+      align-items: baseline;
+      gap: 0.75rem;
+    }
+    .episode-list li:last-child { border-bottom: none; }
+    .episode-tag {
+      font-size: 0.7rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #f97316;
+      white-space: nowrap;
+    }
+
+    /* Relationship list */
+    .relation-item {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 0.75rem 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    }
+    .relation-item:last-child { border-bottom: none; }
+    .relation-name { font-weight: 600; }
+    .relation-type { font-size: 0.8rem; color: #6b7280; }
+
+    /* ===== Footer ===== */
+    footer {
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+      padding: 2rem 0;
+      text-align: center;
+    }
+    footer .footer-brand {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      margin-bottom: 0.75rem;
+    }
+    footer canvas { display: block; border-radius: 4px; }
+    footer p { font-size: 0.8rem; color: #6b7280; margin-bottom: 0; }
+
+    /* ===== Mobile ===== */
+    @media (max-width: 480px) {
+      .nav-links { display: none; }
+      .stats { grid-template-columns: repeat(2, 1fr); }
+      .powers-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div class="container">
+      <div class="nav-brand">
+        <canvas id="brand-canvas" width="22" height="22"></canvas>
+        <span>BOMBSIGHT</span>
+      </div>
+      <div class="nav-links">
+        <a href="#background">Background</a>
+        <a href="#powers">Powers</a>
+        <a href="#appearances">Appearances</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <canvas id="hero-canvas" width="96" height="96"></canvas>
+    <h1>Bombsight</h1>
+    <p class="subtitle">WW2 combat pilot transformed into an immortal Supe. The first of Vought's V-One experiments.</p>
+    <button class="btn" onclick="window.open('https://mirofish.my/', '_blank')">Explore the Universe</button>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- Stats -->
+  <section>
+    <div class="container">
+      <div class="stats">
+        <div class="stat">
+          <div class="stat-value">V-One</div>
+          <div class="stat-label">Serum Type</div>
+        </div>
+        <div class="stat">
+          <div class="stat-value">Immortal</div>
+          <div class="stat-label">Status</div>
+        </div>
+        <div class="stat">
+          <div class="stat-value">WWII</div>
+          <div class="stat-label">Era</div>
+        </div>
+        <div class="stat">
+          <div class="stat-value">Fighter</div>
+          <div class="stat-label">Role</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- Background -->
+  <section id="background">
+    <div class="container">
+      <span class="section-label">Background</span>
+      <h2>The Origin of Bombsight</h2>
+      <div class="quote">
+        <p>"You were everyone's favorite from the start. Especially Clara. Everything they wanted us to be, everything they were working towards, they saw it in you. I fucking hated you for it."</p>
+        <cite>&mdash; Bombsight to Soldier Boy</cite>
+      </div>
+      <div class="card">
+        <p>Robbie, better known as <strong>Bombsight</strong>, is an upcoming main character of the Amazon series <em>Vought Rising</em>, a prequel spin-off series of <em>The Boys</em>. He also appears as a minor character in Season Five of The Boys.</p>
+        <p>Very little is known about Robbie, except that he served as a combat pilot in the U.S. Armed Forces. Sometime later, he was given <strong>V-One</strong> by Frederick Vought himself, subsequently transforming Robbie into a successful Supe known as Bombsight and granting him powerful superhuman abilities.</p>
+        <p>At some point, Bombsight met and fell in love with Clara Vought, but she chose Soldier Boy instead. During the 1950s, Bombsight was featured in commercials for Vought Brand Weight Control Tablets. In 1953, he starred in a film called <em>The Curse of Fu Manchu</em>.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- Personality -->
+  <section>
+    <div class="container">
+      <span class="section-label">Personality</span>
+      <h2>What Drives Him</h2>
+      <div class="card">
+        <p>Unlike most other Supes, Bombsight is not driven by greed, lust, ego or power. He has a deep desire to find someone special and not spend eternity alone. Because of this, he deeply despises his immortality and jumped at the offer Soldier Boy made him to become human again in exchange for the V-One, smiling with joy when he lost his powers.</p>
+        <p>Bombsight is very stubborn, choosing to abandon Golden Geisha waiting for years so she could change her mind about the V-One despite telling him she would never accept immortality. Nevertheless, even after spending years separated he still loves her, immediately arriving to save Geisha who was being held as a hostage by The Boys and Sister Sage.</p>
+        <p>Bombsight has admitted he hates Soldier Boy, because back in their early days he was the one who always got the attention, love and admiration of everyone. Despite this, he is capable of sympathizing with his former teammate because he could not be with the person he loved most, Clara.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- Powers -->
+  <section id="powers">
+    <div class="container">
+      <span class="section-label">Powers &amp; Abilities</span>
+      <h2>Former Powers</h2>
+      <div class="quote">
+        <p>"Huh. So... a punch like a bleeding sledgehammer and a taste for fucking smack."</p>
+        <cite>&mdash; Billy Butcher to Mother's Milk</cite>
+      </div>
+      <div class="powers-grid">
+        <div class="power-item">
+          <div class="emoji">&#9992;&#65039;</div>
+          <h4>Flight</h4>
+          <p>Bombsight can levitate and propel himself through the air at rapid speeds. Unlike other flying Supes, he lands with extreme force that craters the ground like a bomb.</p>
+        </div>
+        <div class="power-item">
+          <div class="emoji">&#8734;&#65039;</div>
+          <h4>Immortality</h4>
+          <p>One of the first Supes injected with V-One, the immortality-granting serum that halts biological aging and preserves youth indefinitely.</p>
+        </div>
+        <div class="power-item">
+          <div class="emoji">&#128170;</div>
+          <h4>Superhuman Strength</h4>
+          <p>Punched 80 years of rust off a safe containing V-One. Recognized as one of a dozen Supes who could punch with such force. Ragdolled both Butcher and Kimiko.</p>
+        </div>
+        <div class="power-item">
+          <div class="emoji">&#128737;&#65039;</div>
+          <h4>Nigh-Invulnerability</h4>
+          <p>Described as effectively unbreakable. Completely bulletproof and durable enough to endure repeated direct blows from Soldier Boy with minimal injury.</p>
+        </div>
+        <div class="power-item">
+          <div class="emoji">&#128066;</div>
+          <h4>Superhuman Reflexes</h4>
+          <p>Dodged Soldier Boy's punches multiple times and retaliated effectively, demonstrating combat reflexes far beyond human capability.</p>
+        </div>
+        <div class="power-item">
+          <div class="emoji">&#128066;</div>
+          <h4>Superhuman Hearing</h4>
+          <p>Like all Supes, Bombsight can hear higher frequencies that humans cannot, granting him enhanced auditory perception.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- Weaknesses -->
+  <section>
+    <div class="container">
+      <span class="section-label">Weaknesses</span>
+      <h2>Known Vulnerabilities</h2>
+      <div class="stats">
+        <div class="stat">
+          <div class="stat-value">Brute Force</div>
+          <div class="stat-label">Can be stunned or killed by extreme force</div>
+        </div>
+        <div class="stat">
+          <div class="stat-value">High Frequencies</div>
+          <div class="stat-label">Induces immense pain and neutralization</div>
+        </div>
+        <div class="stat">
+          <div class="stat-value">Drug Addiction</div>
+          <div class="stat-label">Struggles with substance dependency</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- Appearances -->
+  <section id="appearances">
+    <div class="container">
+      <span class="section-label">Appearances</span>
+      <h2>Episode Appearances</h2>
+      <div class="card">
+        <ul class="episode-list">
+          <li>
+            <span class="episode-tag">Vought Rising S1</span>
+            <span>"Red Scare" &mdash; Bombsight will appear in this episode.</span>
+          </li>
+          <li>
+            <span class="episode-tag">The Boys S4</span>
+            <span>"Beware the Jabberwock, My Son" &mdash; To Be Added.</span>
+          </li>
+          <li>
+            <span class="episode-tag">The Boys S5</span>
+            <span>"Every One of You Sons of Bitches" &mdash; Sister Sage discovers V-One in Soldier Boy's blood, identifying Bombsight as one of five early subjects.</span>
+          </li>
+          <li>
+            <span class="episode-tag">The Boys S5</span>
+            <span>"King of Hell" &mdash; The Boys find no V-One left at Fort Harmony and deduce Bombsight took it.</span>
+          </li>
+          <li>
+            <span class="episode-tag">The Boys S5</span>
+            <span>"One-Shots" &mdash; Marathon reveals Bombsight was a client "for a long time" and has the V-One.</span>
+          </li>
+          <li>
+            <span class="episode-tag">The Boys S5</span>
+            <span>"Though the Heavens Fall" &mdash; The Boys confront Bombsight in an underground parking lot. He fights Butcher and Kimiko before Soldier Boy arrives. Bombsight ultimately agrees to trade the V-One for his humanity.</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- Relationships -->
+  <section>
+    <div class="container">
+      <span class="section-label">Relationships</span>
+      <h2>Allies &amp; Enemies</h2>
+      <div class="card">
+        <div class="relation-item">
+          <span class="relation-name">Soldier Boy</span>
+          <span class="relation-type">Former teammate, former rival, situational enemy</span>
+        </div>
+        <div class="relation-item">
+          <span class="relation-name">Clara Vought / Stormfront</span>
+          <span class="relation-type">Former love interest, deceased</span>
+        </div>
+        <div class="relation-item">
+          <span class="relation-name">Golden Geisha</span>
+          <span class="relation-type">Lover</span>
+        </div>
+        <div class="relation-item">
+          <span class="relation-name">Mister Marathon</span>
+          <span class="relation-type">Drug dealer, deceased</span>
+        </div>
+        <div class="relation-item">
+          <span class="relation-name">Sister Sage</span>
+          <span class="relation-type">Enemy</span>
+        </div>
+        <div class="relation-item">
+          <span class="relation-name">Billy Butcher</span>
+          <span class="relation-type">Enemy</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- Trivia -->
+  <section>
+    <div class="container">
+      <span class="section-label">Trivia</span>
+      <h2>Did You Know?</h2>
+      <div class="card">
+        <p>The casting call for this character used the name <strong>Flyboy</strong>.</p>
+        <p>Bombsight's superhero name is derived from the military bombsight device, a tool designed to accurately target and deploy aerial bombs.</p>
+        <p>His military background as a fighter pilot in the US Air Force is likely a nod to Green Lantern (Hal Jordan) and Captain Marvel (Carol Danvers), both of whom have the ability to fly.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-brand">
+        <canvas id="brand-canvas-footer" width="20" height="20"></canvas>
+        <span>BOMBSIGHT</span>
+      </div>
+      <p>&copy; 2026 Bombsight Character Profile. The Boys universe and all related characters are owned by Amazon Studios, Sony Pictures Television, and the respective rights holders.</p>
+    </div>
+  </footer>
+
+  <script src="canvas-design.js"></script>
+</body>
+</html>
